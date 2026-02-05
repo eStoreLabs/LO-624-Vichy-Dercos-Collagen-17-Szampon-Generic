@@ -1,15 +1,26 @@
 (() => {
-  const swiper = new Swiper('#es-rc .es-swiper', {
-    direction: 'horizontal',
-    loop: true,
+  const accTab = document.querySelectorAll('.es-acc-tab');
 
-    pagination: {
-      el: '#es-rc .es-swiper-pagination',
-    },
+  for (let i = 0; i < accTab.length; i++) {
+    accTab[i].addEventListener('click', function () {
+      this.classList.add('active');
+      let accTabContent = this.nextElementSibling;
 
-    navigation: {
-      nextEl: '#es-rc .es-swiper-button-next',
-      prevEl: '#es-rc .es-swiper-button-prev',
-    },
-  });
+      const hideContent = () => {
+        accTabContent.style.maxHeight = null;
+        this.classList.remove('active');
+      };
+
+      const showContent = () => {
+        accTabContent.style.maxHeight = accTabContent.scrollHeight + 'px';
+        this.classList.add('active');
+      };
+
+      if (accTabContent.style.maxHeight) {
+        hideContent();
+      } else {
+        showContent();
+      }
+    });
+  }
 })();
