@@ -613,7 +613,8 @@
     font-size: 25px;
   }
   #es-rc #es-rc-content .es-footer {
-    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   #es-rc #es-rc-content .es-video__video--mobile {
     display: none;
