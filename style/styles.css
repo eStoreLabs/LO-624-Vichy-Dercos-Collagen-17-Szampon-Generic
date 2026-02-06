@@ -429,7 +429,7 @@
 
 @media screen and (min-width: 350px) {
   #es-rc #es-rc-content .es-routine__link {
-    top: 38%;
+    top: 36%;
   }
 }
 @media screen and (min-width: 400px) {
@@ -735,7 +735,8 @@
 }
 @media screen and (min-width: 890px) {
   #es-rc #es-rc-content .es-top__text {
-    width: 40%;
+    width: 61%;
+    padding-left: 5px;
   }
   #es-rc #es-rc-content .es-top__text-1 {
     font-size: 90px;
