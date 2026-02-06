@@ -402,7 +402,7 @@
   line-height: 50px;
   transition: all 200ms ease-out;
 }
-#es-rc #es-rc-content .es-faq .es-accordion .es-acc-tab.active:before {
+#es-rc #es-rc-content .es-faq .es-accordion .es-acc-tab.es-active:before {
   background: url(../images/plus.png) 50% 50% no-repeat;
   transform: rotate(180deg);
 }

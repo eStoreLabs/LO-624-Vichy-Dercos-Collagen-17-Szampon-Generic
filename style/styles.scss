@@ -497,7 +497,7 @@ $font-family_1: "Lato", sans-serif;
 					transition: all 200ms ease-out;
 				}
 
-				.es-acc-tab.active:before {
+				.es-acc-tab.es-active:before {
 					background: url(../images/plus.png) 50% 50% no-repeat;
 					-webkit-transform: rotate(180deg);
 					transform: rotate(180deg);
