@@ -17,7 +17,6 @@ $font-family_1: "Lato", sans-serif;
 		background-color: $color_2;
 
 		* {
-			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 		}
 
@@ -134,6 +133,13 @@ $font-family_1: "Lato", sans-serif;
 				text-transform: uppercase;
 				text-decoration: none;
 				border-radius: 5px;
+				transition: all 0.3s ease-out;
+
+				&:hover {
+					background-color: $color_2;
+					color: $color_1;
+					border: 1px solid $color_1;
+				}
 			}
 		}
 
@@ -241,6 +247,14 @@ $font-family_1: "Lato", sans-serif;
 				text-transform: uppercase;
 				text-decoration: none;
 
+				transition: all 0.3s ease-out;
+
+				&:hover {
+					background-color: $color_2;
+					color: $color_1;
+					border: 1px solid $color_1;
+				}
+
 				&--1 {
 					left: 3%;
 				}
@@ -281,8 +295,12 @@ $font-family_1: "Lato", sans-serif;
 			}
 
 			&__list-group {
+				display: -webkit-box;
 				display: flex;
+				-webkit-column-gap: 10px;
+				-moz-column-gap: 10px;
 				column-gap: 10px;
+				-webkit-box-align: center;
 				align-items: center;
 				margin-bottom: 10px;
 			}
@@ -384,6 +402,8 @@ $font-family_1: "Lato", sans-serif;
 				color: $color_2;
 				font-size: 70px;
 				background-color: #ae1d0e;
+				width: -webkit-fit-content;
+				width: -moz-fit-content;
 				width: fit-content;
 				padding: 0 20px;
 				border-radius: 25px;
@@ -615,6 +635,7 @@ $font-family_1: "Lato", sans-serif;
 					position: absolute;
 					left: 2%;
 					top: 50%;
+					-webkit-transform: translateY(-50%);
 					transform: translateY(-50%);
 					width: 48%;
 					padding: 0;
@@ -699,8 +720,12 @@ $font-family_1: "Lato", sans-serif;
 				}
 
 				&__list-item {
+					display: -webkit-box;
 					display: flex;
+					-webkit-box-align: center;
 					align-items: center;
+					-webkit-column-gap: 10px;
+					-moz-column-gap: 10px;
 					column-gap: 10px;
 				}
 
@@ -737,9 +762,14 @@ $font-family_1: "Lato", sans-serif;
 
 			.es-top {
 				&__text {
+					display: -webkit-box;
 					display: flex;
+					-webkit-box-pack: center;
 					justify-content: center;
+					-webkit-box-align: center;
 					align-items: center;
+					-webkit-column-gap: 10px;
+					-moz-column-gap: 10px;
 					column-gap: 10px;
 
 					&-1 {
@@ -764,6 +794,7 @@ $font-family_1: "Lato", sans-serif;
 					width: 60%;
 					position: absolute;
 					top: 50%;
+					-webkit-transform: translateY(-50%);
 					transform: translateY(-50%);
 					text-align: left;
 					margin-top: 0;
@@ -781,6 +812,7 @@ $font-family_1: "Lato", sans-serif;
 					position: absolute;
 					top: 50%;
 					right: 5%;
+					-webkit-transform: translateY(-50%);
 					transform: translateY(-50%);
 					background-color: unset;
 				}
@@ -845,6 +877,7 @@ $font-family_1: "Lato", sans-serif;
 					position: absolute;
 					top: 50%;
 					left: 3%;
+					-webkit-transform: translateY(-50%);
 					transform: translateY(-50%);
 					width: 50%;
 				}
@@ -854,6 +887,7 @@ $font-family_1: "Lato", sans-serif;
 					display: block;
 					top: 50%;
 					left: 3%;
+					-webkit-transform: translateY(-50%);
 					transform: translateY(-50%);
 					max-width: 4%;
 					margin: 0 auto;
@@ -873,6 +907,7 @@ $font-family_1: "Lato", sans-serif;
 					width: 50%;
 					top: 50%;
 					right: 0;
+					-webkit-transform: translateY(-50%);
 					transform: translateY(-50%);
 					background: unset
 				}
@@ -911,6 +946,7 @@ $font-family_1: "Lato", sans-serif;
 				&__step {
 					top: 50%;
 					right: 10%;
+					-webkit-transform: translateY(-50%);
 					transform: translateY(-50%);
 				}
 
@@ -930,6 +966,7 @@ $font-family_1: "Lato", sans-serif;
 			.es-routine {
 				&__left {
 					top: 50%;
+					-webkit-transform: translateY(-50%);
 					transform: translateY(-50%);
 				}
 
@@ -975,6 +1012,7 @@ $font-family_1: "Lato", sans-serif;
 
 			.es-top {
 				&__text {
+					-webkit-box-pack: start;
 					justify-content: flex-start;
 					padding-left: 40px;
 				}
@@ -1179,6 +1217,8 @@ $font-family_1: "Lato", sans-serif;
 				&__text {
 					padding-left: 0;
 					width: 61%;
+					-webkit-column-gap: 20px;
+					-moz-column-gap: 20px;
 					column-gap: 20px;
 				}
 			}

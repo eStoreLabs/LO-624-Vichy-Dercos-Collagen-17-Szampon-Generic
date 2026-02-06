@@ -107,6 +107,12 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
+  transition: all 0.3s ease-out;
+}
+#es-rc #es-rc-content .es-product__link:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000000;
 }
 #es-rc #es-rc-content .es-ba {
   background-color: #510b08;
@@ -193,6 +199,12 @@
   border-radius: 5px;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+#es-rc #es-rc-content .es-routine__link:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #000000;
 }
 #es-rc #es-rc-content .es-routine__link--1 {
   left: 3%;
@@ -229,7 +241,7 @@
 #es-rc #es-rc-content .es-routine__list-group {
   display: flex;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -529,7 +541,7 @@
     display: flex;
     align-items: center;
     -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
   }
   #es-rc #es-rc-content .es-routine__list-item-step {
     font-size: 14px;
@@ -552,7 +564,7 @@
     justify-content: center;
     align-items: center;
     -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
   }
   #es-rc #es-rc-content .es-top__text-1 {
     font-size: 50px;
@@ -847,7 +859,7 @@
     padding-left: 0;
     width: 61%;
     -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
   #es-rc #es-rc-content .es-faq__title {
     font-size: 27px;
